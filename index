@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keep Alive</title>
+  <title>Ping Service</title>
 </head>
 <body>
-  <h1>Keep Alive Service</h1>
+  <h1>Ping Service</h1>
   <script>
-    const url = 'https://replit.com/@staff-control/Staff-Control'; // Sostituisci con l'URL del tuo Replit
+    const url = 'https://replit.com/@staff-control/Staff-Control#index.js'; // Sostituisci con l'URL del tuo progetto Replit
 
     function ping() {
       fetch(url, { method: 'GET' })
