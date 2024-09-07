@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keep Alive</title>
+</head>
+<body>
+  <h1>Keep Alive Service</h1>
+  <script>
+    const url = 'https://replit.com/@staff-control/Staff-Control'; // Sostituisci con l'URL del tuo Replit
+
+    function ping() {
+      fetch(url, { method: 'GET' })
+        .then(response => {
+          if (response.ok) {
+            console.log('Ping successful');
+          } else {
+            console.log('Ping failed');
+          }
+        })
+        .catch(error => {
+          console.error('Error pinging the server:', error);
+        });
+    }
+
+    setInterval(ping, 1000); // Esegui la funzione ping ogni secondo
+  </script>
+</body>
+</html>
